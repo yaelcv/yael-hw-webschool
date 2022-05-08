@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+   
+}
+
+@keyframes movement{
+    25% {top:520px;left:0px; height: 27vh; width: 40vh;}
+    50% {top:0px;left:950px; height: 40vh; width: 40vh;}
+    75% {top:520px;left:950px; height: 27vh; width: 40vh;} 
+}
+
+section {
+    height: 40vh;
+    width: 40vh;
+    background-color: white;
+    z-index: 2;
+    border-radius: 50%;
+    border: black solid 1px;
+    float: left;
+    position: relative;
+    top:0px;left:0px;
+    animation-name: movement;
+    animation-duration: 6s;
+    animation-timing-function: ease cubic-bezier(0.67, 0.05, 0.25, 1);
+    animation-iteration-count: 2;
+    animation-direction: alternate;    
+}
+
+@keyframes movcir {
+    6.25% {top: 100px; left: 80px; height: 13vh; width: 18vh;}
+    12.5% {top:80px;  left: 80px; height: 18vh; width: 18vh;}
+    18.75% {top:100px;  left: 80px; height: 13vh; width: 18vh;}
+    25% {top: 80px; left: 80px; height: 18vh; width: 18vh;}
+    31.25% {top: 100px; left: 80px; height: 13vh; width: 18vh;}
+    37.5% {top:80px; left: 80px; height: 18vh; width: 18vh;}
+    43.75% {top:100px;  left: 80px; height: 13vh; width: 18vh;} 
+    50% {top: 80px; left: 80px; height: 18vh; width: 18vh;}
+    55% {top: 80px;  left: 0px; height: 18vh; width: 13vh }
+    60% {top: 80px;  left: 80px; height: 18vh; width: 18vh }
+    66% {top: 80px; left: 180px; height: 18vh; width: 13vh }
+    74% {top: 80px; left: 80px; height: 18vh; width: 18vh }
+    82% {top: 0px; left: 80px; height: 13vh; width: 18vh }
+    88%  {top: 80px; left: 80px; height: 18vh; width: 18vh }
+    95%  {top: 180px; left: 80px; height: 13vh; width: 18vh }
+}
+
+#circle-left {
+    height: 18vh;
+    width: 18vh;
+    background-color:blue;
+    border-radius: 50%;
+    align-items: center;
+    z-index:5;
+    position: relative;
+    top: 80px;
+    left: 80px;
+    animation-name:movcir;
+    animation-duration: 24s;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+}
+
+#circle-right {
+    height: 18vh;
+    width: 18vh;
+    background-color:blue;
+    border-radius: 50%;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    top: 80px;
+    left: 80px;
+    animation-name:movcir;
+    animation-duration: 24s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+             
+#eye-left {
+    height: 50px;
+    width: 50px;
+    background-color: #0b0b12;
+    border-radius: 50%;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+ 
+#eye-right {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    align-items: center;
+    z-index: 99;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
