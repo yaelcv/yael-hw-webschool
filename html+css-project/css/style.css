@@ -1,0 +1,36 @@
+body {
+    color: rgb(59, 59, 134);
+}
+
+#word {
+    display: inline-block;
+}
+
+#pic {
+    align-items: center;
+    display: inline-block;
+    padding-right: 80px;
+}
+
+#portrait {
+    border: 3px;
+    border: rgb(59, 59, 134);
+    border: double;
+    align-items: center;
+}
+
+#skils {
+    background-image: url("../assets/images/shutterstock_1948706335_re_autoOrient_i.jpg");
+    background-repeat: no-repeat;
+    padding-right: 100px;
+}
+
+.animation:hover {
+    font-size: 30px;
+    color: palevioletred;
+}
+
+#icons {
+    width: 400px;
+    float: left;
+}
