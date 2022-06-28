@@ -1,0 +1,99 @@
+* {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: grey;
+}
+header {
+  height: 15vh;
+  width: 100vw;
+}
+#koteret {
+  background-color: aqua;
+  color: #8f2424;
+  text-align: center;
+  height: 10vh;
+  width: 99vw;
+  margin: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 20px 0px 10px 0px;
+}
+
+main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+}
+
+#game {
+  background-color: black;
+  width: 70vw;
+  height: 100%;
+  margin: 10px;
+}
+
+#clickMe {
+  background-color: yellow;
+  height: 40px;
+  width: 80px;
+  border: solid #8f2424;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #8f2424;
+  border-radius: 25%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#props {
+  background-color: white;
+  width: 20vw;
+  height: 100%;
+  flex-grow: 4;
+  color: black;
+  float: right;
+  border: solid #8f2424 2px;
+  margin: 5px;
+  text-align: center;
+}
+
+.prop {
+  height: auto;
+  border: solid #8f2424 2px;
+  margin: 5px;
+  padding: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+#start {
+  background-color: #8f2424;
+  height: 80px;
+  width: 100px;
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+
+#high-scores {
+  font-size: 24px;
+}

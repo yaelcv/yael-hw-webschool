@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>catch me if you can</title>
+</head>
+
+<body>
+    <header>
+        <section id="koteret">Catch Me if You Can!</section>
+    </header>
+    <main>
+        <section id="game" onclick="badClicks()">
+            <button id="clickMe" onmouseover="moveButton(this)" onclick="goodClicks()">click me!</button>
+        </section>
+        <section id="props">
+            <div id="score" class="prop">
+                <p> Score:</p>
+                <p id="score-value">0</p>
+            </div>
+            <div id="level" class="prop">
+                <p> Level: </p>
+                <p id="level-value">1</p>
+            </div>
+            <div id="to-next-level" class="prop">
+                <p> Clicks to Next Level: </p>
+                <p id="clicksToNextLevel">10</p>
+            </div>
+            <div id="miss" class="prop">
+                <p> Missed Clicks: </p>
+                <p id="miss-value">0</p>
+            </div>
+            <div id="timer" class="prop">
+                <p>Timer</p>
+                <p id="timer-value">-</p>
+            </div>
+            <div class="prop">
+                <p id="high-scores"> High Scores:</p><br>
+                <table style="width:100%">
+                    <tr id="no-1">
+                        <td id="name1" title="">name</td>
+                        <td id="score1">score</td>
+                    </tr>
+                    <tr id="no-2">
+                        <td id="name2" title="">-</td>
+                        <td id="score2">-</td>
+                    </tr>
+                    <tr id="no-3">
+                        <td id="name3" title="">-</td>
+                        <td id="score3">-</td>
+                    </tr>
+                    <tr id="no-4">
+                        <td id="name4" title="">-</td>
+                        <td id="score4">-</td>
+                    </tr>
+                    <tr id="no-5">
+                        <td id="name5" title="">-</td>
+                        <td id="score5">-</td>
+                    </tr>
+                </table>
+            </div>
+            <div> <button id="start" onclick="start(this)">start!</button></div>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
