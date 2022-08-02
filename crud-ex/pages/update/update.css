@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(122, 122, 199);
+    color: white;
+}
+
+form {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+ 
+}
+  
+nav {
+    font-size: 19px;
+    font-weight: bold;  
+}

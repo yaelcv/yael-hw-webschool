@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(74, 111, 74);
+    color: white;
+}
+
+#list (
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 26px;
+    text-align: center;
+)
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  nav {
+    font-size: 19px;
+    font-weight: bold;  
+}
+
+  
