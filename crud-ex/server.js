@@ -89,6 +89,9 @@ const server = http.createServer(async (req, res) => {
               studentBuffers.push(chunk);
             }
             const studentToUpdate = JSON.parse(Buffer.concat(studentBuffers).toString());
+
+            console.log(studentToUpdate);
+
             let found = updateStudent(studentToUpdate);
             let message;
             if (found) {
